@@ -156,12 +156,36 @@ function updateNav(element)
     }
 }
 
-document.querySelector('.hire-me').addEventListener('click', function(){
+document.querySelector('.hire-me ').addEventListener('click', function(){
     const sectionIndex = this.getAttribute('data-section-index');
     addBackSectionClass(sectionIndex);
     showSection(this);
     updateNav(this);
     removeBackSectionClass();
+});
+
+document.querySelector('.selanjutnya').addEventListener('click', function(){
+  const sectionIndex = this.getAttribute('data-section-index');
+  addBackSectionClass(sectionIndex);
+  showSection(this);
+  updateNav(this);
+  removeBackSectionClass();
+});
+
+document.querySelector('.selanjutnya2').addEventListener('click', function(){
+  const sectionIndex = this.getAttribute('data-section-index');
+  addBackSectionClass(sectionIndex);
+  showSection(this);
+  updateNav(this);
+  removeBackSectionClass();
+});
+
+document.querySelector('.selanjutnya3').addEventListener('click', function(){
+  const sectionIndex = this.getAttribute('data-section-index');
+  addBackSectionClass(sectionIndex);
+  showSection(this);
+  updateNav(this);
+  removeBackSectionClass();
 });
 
 function showSection(element) 
